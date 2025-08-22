@@ -8,9 +8,9 @@ import { ralewaySans } from '@/app/layout'
 const LoginPage = () => {
     return (
         <div className='container m-auto flex items-center justify-center h-screen'>
-            <div className='relative flex items-center gap-24 justify-between rounded-sm'>
-                <div className='w-10 h-10 rounded-full bg-[#FF8A00] text-white flex items-center justify-center font-semibold text-lg absolute top-10 left-10'>D</div>
-                <div className='w-5/12 pl-24'>
+            <div className='relative flex items-center md:gap-12 lg:gap-24 justify-between rounded-sm'>
+                <div className='hidden w-10 h-10 rounded-full bg-[#FF8A00] text-white lg:flex items-center justify-center font-semibold text-lg absolute top-10 left-10'>D</div>
+                <div className='w-full md:w-6/12 lg:w-5/12 md:pl-24'>
                     <h2 className={ralewaySans.className + ' font-bold text-[40px] text-[#311F09] mb-4'}>Login</h2>
                     <p className='font-normal text-[14px] mb-8'>Don't have an account? <Link href={`/auth/signup`} className='text-[#0094FF]'>Sign up</Link></p>
                     <form action="#" className='flex flex-col gap-8 '>
@@ -32,7 +32,7 @@ const LoginPage = () => {
                         </button>
                     </form>
                 </div>
-                <figure className='w-6/12 '>
+                <figure className='hidden md:block w-6/12 '>
                     <Image className='w-full h-full' src={authImg} alt='Auth Image' />
                 </figure>
             </div>
