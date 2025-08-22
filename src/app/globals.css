@@ -3,3 +3,10 @@
 :root {
   --background: #e5e5e5;
 }
+
+@media screen and (max-width:370px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+}
