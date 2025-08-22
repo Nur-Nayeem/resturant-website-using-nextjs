@@ -8,20 +8,16 @@ import { ralewaySans } from '@/app/layout'
 const LoginPage = () => {
     return (
         <div className='container m-auto flex items-center justify-center h-screen'>
-            <div className='relative flex items-center gap-24 justify-between bg-white rounded-sm'>
+            <div className='relative flex items-center gap-24 justify-between rounded-sm'>
                 <div className='w-10 h-10 rounded-full bg-[#FF8A00] text-white flex items-center justify-center font-semibold text-lg absolute top-10 left-10'>D</div>
                 <div className='w-5/12 pl-24'>
                     <h2 className={ralewaySans.className + ' font-bold text-[40px] text-[#311F09] mb-4'}>Login</h2>
                     <p className='font-normal text-[14px] mb-8'>Don't have an account? <Link href={`/auth/signup`} className='text-[#0094FF]'>Sign up</Link></p>
-                    <form action="#" className='flex flex-col gap-7 '>
-                        <label htmlFor="email">
-                            <h3 className='mb-[15px]'>Email address</h3>
-                            <input className='bg-[#fafaf9] w-full py-4 px-8 rounded-xl outline-0' type="text" placeholder='Robertmartine@gmail.com' />
-                        </label>
-                        <label htmlFor="password">
-                            <h3 className='mb-[15px]'>Password</h3>
-                            <input className='bg-[#fafaf9] w-full py-4 px-8 rounded-xl outline-0' type="password" placeholder='*************' />
-                        </label>
+                    <form action="#" className='flex flex-col gap-8 '>
+                        <input className='bg-[#fafaf9] w-full py-4 px-8 rounded-xl outline-0' type="text" placeholder='Email address' />
+
+                        <input className='bg-[#fafaf9] w-full py-4 px-8 rounded-xl outline-0' type="password" placeholder='Password' />
+
                         <div className='flex items-center justify-between'>
                             <div className='flex gap-3'>
                                 <input type="checkbox" name="remember" id="remember" />
