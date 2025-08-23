@@ -10,6 +10,7 @@ import five from '@/assets/food/food-5.png'
 import six from '@/assets/food/food-6.png'
 import hero from '@/assets/hero.png'
 import hero2 from '@/assets/hero2.png'
+import { ChevronLeft, ChevronRight, Ellipsis } from 'lucide-react'
 
 const FoodMenu = () => {
     return (
@@ -32,6 +33,18 @@ const FoodMenu = () => {
                 <FoodCard img={hero} />
                 <FoodCard img={five} />
                 <FoodCard img={six} />
+            </div>
+            <div className='flex gap-4 items-center justify-center my-20'>
+                <div className='w-[55px] h-[55px] flex items-center justify-center bg-[#311F09] text-white mr-3.5 rounded-xl'>
+                    <ChevronLeft />
+                </div>
+                <div className='bg-[rgba(255,138,0,0.1)] w-[55px] h-[55px] flex items-center justify-center text-[#FF8A00] rounded-xl'>1</div>
+                <div className='bg-[rgba(255,138,0,0.1)] w-[55px] h-[55px] flex items-center justify-center text-[#FF8A00] rounded-xl'>2</div>
+                <div className='bg-[rgba(255,138,0,0.1)] w-[55px] h-[55px] flex items-center justify-center text-[#FF8A00] rounded-xl'>3</div>
+                <div className=' w-[55px] h-[55px] flex items-center justify-center text-[#B7A28B]'><Ellipsis /></div>
+                <div className='w-[55px] h-[55px] flex items-center justify-center bg-[#311F09] text-white ml-3.5 rounded-xl'>
+                    <ChevronRight />
+                </div>
             </div>
 
         </div>
