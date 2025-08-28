@@ -7,13 +7,13 @@ import { tinos } from '@/app/layout'
 
 const ThirdHeroSection = () => {
     return (
-        <div className='flex gap-6 md:gap-20 flex-col-reverse md:flex-row justify-between items-center py-32'>
+        <div className='container mx-auto flex gap-6 md:gap-44 flex-col-reverse md:flex-row justify-between items-center py-24'>
 
             <figure className='w-full md:mx-w-6/12 flex items-center justify-center'>
                 <div className='relative w-[80%] border-1 border-gray-400 lg:p-20 p-10 rounded-full '>
                     <Image className='w-full rounded-full border-[#f9f0e4] lg:border-[50px] border-[25px]' src={hero3} alt='Food' />
-                    <Image className='absolute top-20 right-0 lg:max-w-[100px] lg:max-h-[100px] max-w-[70px] max-h-[70px]' src={herobottom} alt='bottom img' />
-                    <Image className='absolute bottom-20 left-0 lg:max-w-[100px] lg:max-h-[100px] max-w-[70px] max-h-[70px]' src={herotop} alt='top img' />
+                    <Image className='absolute top-20 right-0 lg:max-w-[70px] lg:max-h-[70px] max-w-[40px] max-h-[40px]' src={herobottom} alt='bottom img' />
+                    <Image className='absolute bottom-20 left-0 lg:max-w-[70px] lg:max-h-[70px] max-w-[40px] max-h-[40px]' src={herotop} alt='top img' />
                 </div>
             </figure>
             <div className='w-full md:pl-8 md:max-w-5/12 flex flex-col'>

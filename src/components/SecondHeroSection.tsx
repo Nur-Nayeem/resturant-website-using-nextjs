@@ -5,9 +5,9 @@ import { tinos } from '@/app/layout'
 
 const SecondHeroSection = () => {
     return (
-        <div className='flex gap-6 md:gap-12 flex-col-reverse md:flex-row justify-between items-center py-14 lg:py-0'>
-            <figure className='w-full md:mx-w-7/12 flex items-center justify-center'>
-                <Image className='w-[90%]' src={hero2} alt='Food' />
+        <div className='container mx-auto flex gap-6 md:gap-44 flex-col-reverse md:flex-row justify-between items-center py-14 lg:py-0'>
+            <figure className='w-full md:max-w-7/12 flex items-center justify-center'>
+                <Image className='max-w-full' src={hero2} alt='Food' />
             </figure>
             <div className='w-full md:max-w-5/12 flex flex-col'>
                 <h1 className={tinos.className + ' font-bold text-5xl lg:text-[80px] leading-[100%]'}>Welcome to <br /><span className='text-[#FF8A00]'>delizioso</span></h1>
