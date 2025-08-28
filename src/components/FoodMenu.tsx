@@ -24,7 +24,7 @@ const FoodMenu = () => {
                 <button className='py-4 px-11  rounded-[160px] bg-[rgba(208,204,199,0.1)]'>Drink</button>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center'>
                 <FoodCard img={one} />
                 <FoodCard img={two} />
                 <FoodCard img={three} />
