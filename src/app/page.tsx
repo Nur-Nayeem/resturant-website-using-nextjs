@@ -1,3 +1,4 @@
+import CustomerSay from "@/components/CustomerSay";
 import FoodMenu from "@/components/FoodMenu";
 import GreatestChef from "@/components/GreatestChef";
 import HeroSection from "@/components/HeroSection";
@@ -25,6 +26,7 @@ export default function Home() {
       </section>
       <section className="container mx-auto px-2.5 my-12">
         <GreatestChef />
+        <CustomerSay />
       </section>
     </div>
 

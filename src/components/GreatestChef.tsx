@@ -9,7 +9,7 @@ const GreatestChef = () => {
     return (
         <div>
             <h1 className={tinos.className + ' text-center mt-44 mb-24 text-7xl text-[#311F09] font-bold'}>Our greatest chef</h1>
-            <div className='flex flex-wrap justify-center items-center flex-col md:flex-row gap-10'>
+            <div className='flex flex-wrap justify-center md:justify-between items-center flex-col md:flex-row gap-10'>
                 <div className='flex flex-col'>
                     <figure className='max-w-[400px] h-[720px] rounded-4xl bg-[#d1d0d2]'>
                         <Image className='h-full' src={chef1} alt='chef 1' />
@@ -39,6 +39,11 @@ const GreatestChef = () => {
                     </div>
                 </div>
             </div>
+
+
+            <button className='my-10 mx-auto py-5 px-12 bg-[#FF8A00] text-white text-sm md:text-xl font-medium rounded-[160px] block'>View All</button>
+
+
         </div>
     )
 }
