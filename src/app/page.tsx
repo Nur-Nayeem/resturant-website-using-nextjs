@@ -1,4 +1,5 @@
 import FoodMenu from "@/components/FoodMenu";
+import GreatestChef from "@/components/GreatestChef";
 import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
 import SecondHeroSection from "@/components/SecondHeroSection";
@@ -21,6 +22,9 @@ export default function Home() {
       </section>
       <section className="bg-[#fffbf5] px-2.5">
         <ThirdHeroSection />
+      </section>
+      <section className="container mx-auto px-2.5 my-12">
+        <GreatestChef />
       </section>
     </div>
 
