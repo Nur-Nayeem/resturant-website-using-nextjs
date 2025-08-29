@@ -10,7 +10,7 @@ const OpenSection = () => {
                 <p className='text-xl'>Launch : Mon-Sun : 11:00am-02:00pm</p>
                 <p className='text-xl'>Dinner : sunday : 04:00pm-08:00pm</p>
             </div>
-            <div className='flex items-center justify-center gap-5 relative z-10'>
+            <div className='flex items-center justify-center gap-5 relative z-10 sm:flex-row flex-col'>
                 <button className='py-5 px-12 bg-[#FF8A00] text-white text-sm md:text-xl font-semibold rounded-[160px]'>Order now</button>
 
                 <button className='py-5 px-12 bg-white  text-sm md:text-xl font-semibold rounded-[160px]'>Reservation</button>

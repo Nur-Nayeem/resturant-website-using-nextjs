@@ -11,10 +11,10 @@ const NavBar = () => {
             </div>
             <div className='hidden md:flex gap-2 lg:gap-10 text-sm'>
                 <Link href={`/`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >Home</Link>
-                <Link href={`/`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >menu</Link>
-                <Link href={`/`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >About us</Link>
+                <Link href={`/menu`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >menu</Link>
+                <Link href={`/about-us`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >About us</Link>
                 <Link href={`/`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >Order Online</Link>
-                <Link href={`/`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >Reservation</Link>
+                <Link href={`/reservation`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >Reservation</Link>
                 <Link href={`/`} className='text-[#311F09] hover:text-[#FF8A00] transition-all duration-300' >Contact us</Link>
             </div>
             <div className='flex items-center gap-7'>

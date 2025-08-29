@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #e5e5e5;
@@ -9,4 +10,15 @@
     flex-direction: column;
     width: 100%;
   }
+}
+
+/* custom-date.css */
+.hide-calendar-icon::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+.hide-calendar-icon {
+  appearance: none;
+  -moz-appearance: none;
 }
