@@ -1,5 +1,6 @@
 import CustomerSay from "@/components/CustomerSay";
 import FoodMenu from "@/components/FoodMenu";
+import Footer from "@/components/Footer";
 import GreatestChef from "@/components/GreatestChef";
 import HeroSection from "@/components/HeroSection";
 import NavBar from "@/components/NavBar";
@@ -30,6 +31,9 @@ export default function Home() {
         <CustomerSay />
         <OpenSection />
       </section>
+      <footer className="bg-[#311f09]">
+        <Footer />
+      </footer>
     </div>
 
   );
