@@ -11,7 +11,7 @@ import { tinos } from '@/app/layout'
 
 const CustomerSay = () => {
     return (
-        <div className="bg-[url('/bg-section.png')] h-full bg-no-repeat bg-cover p-10" >
+        <div className="bg-[url('/bg-section.png')] h-[1100px]  bg-no-repeat bg-cover p-10" >
             <h1 className={tinos.className + ' text-center text-7xl text-[#311F09] font-bold my-10'}>Our customers say</h1>
             <div>
                 <div className='flex flex-col items-center text-center  max-w-[60%] mx-auto pt-6'>
