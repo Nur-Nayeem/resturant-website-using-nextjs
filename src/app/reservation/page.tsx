@@ -1,12 +1,22 @@
+'use client'
 import Image from "next/image";
 import reservationImg from '@/assets/reservation.png'
 import CustomDateInput from "@/components/Date";
 import CustomTimeInput from "@/components/Time";
 import CustomNumberSelect from "@/components/PartySizeInput";
 import { tinos } from "../layout";
+import { useState } from "react";
+import Modal from "@/components/Modal";
 
 
-export default function () {
+export default function ReservationPage() {
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const toggleModal = () => {
+        setModalOpen(!isModalOpen);
+    };
+
     return (
         <div className="flex w-[100vw] items-center justify-between my-36 md:flex-row flex-col">
             <figure className="w-full md:w-1/2 border-[30px] md:border-[69px] bg-[rgba(208,204,199,0.2)] border-[rgb(208,204,199,0)] rounded-r-full">
@@ -23,9 +33,9 @@ export default function () {
                     <CustomNumberSelect />
 
                 </form>
-                <button className="bg-[#FF8A00] mx-2.5 md:mx-0 py-9 text-2xl text-white font-semibold rounded-[20px] cursor-pointer w-full">Book now</button>
+                <button onClick={toggleModal} className="bg-[#FF8A00] mx-2.5 md:mx-0 py-9 text-2xl text-white font-semibold rounded-[20px] cursor-pointer w-full">Book now</button>
 
-
+                <Modal isOpen={isModalOpen} onClose={toggleModal} />
 
 
             </div>
